@@ -50,6 +50,9 @@ public class ChatController {
 				User saveUser = new User(name);
 				userService.save(saveUser);
 			}
+			else {
+				//TODO a user was found, get all chats of that user
+			}
 			return loginEvent;
 		}).collect(Collectors.toList());
 
